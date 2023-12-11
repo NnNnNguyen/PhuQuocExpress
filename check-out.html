@@ -1,0 +1,806 @@
+<!DOCTYPE html>
+<html lang="vi">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta name="description" content="Phú Quốc Express" />
+    <title>Đặt vé | Phú Quốc Express - Kết nối non sông Việt</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="shortcut icon" type="image/x-icon" href="assets/images/logo-favicon.png">
+
+    <!-- CSS here -->
+    <link rel="stylesheet" href="assets/vendors/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/vendors/bootstrap-icons-1.11.1/bootstrap-icons.css">
+    <link rel="stylesheet" href="assets/css/swiper.min.css">
+    <link rel="stylesheet" href="assets/css/animate.min.css">
+    <link rel="stylesheet" href="assets/css/key.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/flatpickr@4.6.6/dist/flatpickr.min.css">
+
+</head>
+
+<body>
+    <!-- Preloader Start -->
+    <div id="preloader-active">
+        <div class="preloader d-flex align-items-center justify-content-center">
+            <div class="preloader-inner position-relative">
+                <div class="preloader-circle"></div>
+                <div class="preloader-img pere-text">
+                    <img src="assets/images/logo-favicon.png" alt="loading....">
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Preloader Start -->
+
+    <header>
+        <!-- Header Start -->
+        <div class="main-header">
+            <div class="header-main header-sticky">
+                <div class="container">
+                    <div class="row align-items-center">
+                        <!-- Logo -->
+                        <div
+                            class="col-11 col-lg-3 d-flex justify-content-between align-items-center position-relative">
+                            <div class="logo p-lg-0 p-2">
+                                <a href="index.html"><img src="assets/images/logo-qp-main.png" alt="logo"
+                                        class="img-fluid"></a>
+                            </div>
+                            <ul class="header-right">
+                                <li class="d-lg-none">
+                                    <div class="menu cursor-pointer">
+                                        <span class="hamburger-icon">
+                                            <span class="hamburger-bar hamburger-bar-1"></span>
+                                            <span class="hamburger-bar hamburger-bar-2"></span>
+                                            <span class="hamburger-bar hamburger-bar-3"></span>
+                                        </span>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="col-4 col-md-9 col-lg-9 text-end d-none d-lg-block">
+                            <!-- Topbar-menu  -->
+                            <div class="main-menu">
+                                <ul class="m-0 topmenu">
+                                    <li class="nav-item"><a href="#">Hỗ trợ</a></li>
+                                    <li class="nav-item">
+                                        <a href="#" class="pe-0">Đăng ký</a><span class="px-1">|</span>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a href="#" class="ps-0">Đăng nhập</a>
+                                    </li>
+                                    <li class="nav-item"><a href="indexUS.html"><img src="assets/images/vn.png"
+                                                alt="Tiếng Việt"></a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <!-- Main-menu -->
+                            <div class="main-menu">
+                                <ul class="m-0 mainmenu">
+                                    <li class="nav-item"><a href="index.html" class="text-uppercase">Trang chủ</a> </li>
+                                    <li class="nav-item active"><a href="select-route.html" class="text-uppercase">Đặt vé</a>
+                                    </li>
+                                    <li class="nav-item"><a href="posts.html" class="text-uppercase">Tin tức</a></li>
+                                    <li class="nav-item"><a href="handbook.html" class="text-uppercase">Cẩm nang du lịch</a></li>
+                                    <li class="nav-item"><a href="ticket-price.html" class="text-uppercase">Giá vé</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="menu-overlay d-lg-none">
+            <nav class="overlay-menu">
+                <ul class="one mt-4">
+                    <ul id="navigation">
+                        <li class="nav-item"><a href="index.html" class="text-uppercase w-100">Trang chủ</a> </li>
+                        <li class="nav-item active"><a href="select-route.html" class="text-uppercase w-100">Đặt vé</a></li>
+                        <li class="nav-item"><a href="posts.html" class="text-uppercase w-100">Tin tức</a></li>
+                        <li class="nav-item"><a href="handbook.html" class="text-uppercase w-100">Cẩm nang du lịch</a></li>
+                        <li class="nav-item"><a href="ticket-price.html" class="text-uppercase w-100">Giá vé</a></li>
+                        <li class="nav-item">
+                            <hr>
+                        </li>
+                        <li class="nav-item"><a href="#">Hỗ trợ</a></li>
+                        <li class="nav-item">
+                            <a href="#" class="pe-0">Đăng ký</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#" class="ps-0">Đăng nhập</a>
+                        </li>
+                        <li class="nav-item"><a href="indexUS.html" class="lag"><img src="assets/images/vn.png"
+                                    alt="Tiếng Việt"></a>
+                        </li>
+                    </ul>
+                </ul>
+            </nav>
+    </header>
+    <!-- Header End -->
+    <main>
+        <section class="section section-hero bg-linear-blue transparent-header"></section>
+        <section class="section bg-gray">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12 p-4 bg-white rounded-3 route-information">
+                        <div class="d-flex">
+                            <h5 class="h5 mb-md-0 title-info fw-semibold">CHUYẾN KHỨ HỒI</h5>
+                        </div>
+                        <div class="d-md-flex">
+                            <p class="mb-0 text-secondary"><i class="bi bi-crosshair primary"></i> Điểm khởi hành<span
+                                    class="primary fw-semibold"> Tp. Rạch Giá
+                                </span>
+                            <p>
+                            <p class="mb-0 text-secondary"> <i class="bi bi-geo-alt primary ms-0 ms-md-3"></i> Điểm
+                                đến<span class="primary fw-semibold"> Tp. Phú Quốc</span>
+                            <p>
+                        </div>
+                    </div>
+                </div>
+                <div class="row bg-light mt-5">
+                    <div
+                        class="col-12 text-white primary-bg d-flex justify-content-between align-items-center py-2 rounded-top">
+                        <div class="title-steps">
+                            <h2 class="fs-4 text-uppercase mb-0">Thanh toán</h2>
+                        </div>
+                        <div class="count-steps">
+                            <p class="fs-4 mb-0">5/5</p>
+                        </div>
+                    </div>
+                    <div class="col-12 bg-white pb-5">
+                        <div class="row align-items-start">
+                            <div class="col-12 px-2 px-md-4">
+                                <h5 class="fw-semibold fs-sm-6 text-uppercase mt-3">Xác nhận thông tin đặt vé</h5>
+                                <div class="title-info py-2 d-flex align-items-center">
+                                    <i class="bi bi-person-fill fs-4  me-2"></i>
+                                    <h6 class="text-uppercase fw-semibold mb-0"> Thông tin người đặt</h6>
+                                </div>
+                                <div class="row mb-3">
+                                    <div class="col-12 col-md-6 col-lg-5">
+                                        <p><strong>Họ tên: </strong><span class="name-customer"></span></p>
+                                    </div>
+                                    <div class="col-12 col-md-6 col-lg-5">
+                                        <p><strong>Số điện thoại: </strong><span class="phone-customer"></span></p>
+                                    </div>
+                                    <div class="col-12 col-md-6 col-lg-5">
+                                        <p><strong>Email: </strong><span class="email-customer"></span></p>
+                                    </div>
+                                </div>
+                                <div class="row mb-3">
+                                    <div class="col-12 col-md-6 col-lg-5">
+                                        <p><strong>Đơn vị xuất hóa đơn: </strong><span class="company-name"></span></p>
+                                    </div>
+                                    <div class="col-12 col-md-6 col-lg-5">
+                                        <p><strong>Mã số thuế: </strong><span class="tax-code"></span></p>
+                                    </div>
+                                    <div class="col-12 col-md-6 col-lg-5">
+                                        <p><strong>Địa chỉ: </strong><span class="company-address"></span></p>
+                                    </div>
+                                </div>
+                                <hr>
+                                <div class="title-info py-2 d-flex align-items-center">
+                                    <i class="bi bi-calendar3 fs-4 me-2"></i>
+                                    <h6 class="text-uppercase fw-semibold mb-0"> Thông hành trình</h6>
+                                </div>
+                                <div class="row px-md-2">
+                                    <div class="col-12 border border-1 rounded-3 p-2 p-md-4 mb-4">
+                                        <h6 class="text-uppercase fw-semibold primary"> Chuyến đi</h6>
+                                        <div class="row">
+                                            <div class="col-12 col-md-6">
+                                                <p class="fs-sm-6"><strong>Tên chuyến: </strong></p>
+                                            </div>
+                                            <div class="col-12 col-md-6">
+                                                <p class="fs-sm-6"><strong>Ngày khởi hành: </strong></p>
+                                            </div>
+                                            <div class="col-12 col-md-6">
+                                                <p class="fs-sm-6"><strong>Tên tàu: </strong></p>
+                                            </div>
+                                            <div class="col-12 col-md-6">
+                                                <p class="fs-sm-6"><strong>Cảng: </strong></p>
+                                            </div>
+                                        </div>
+                                        <table class="table table-bordered customer-list-table">
+                                            <thead>
+                                                <tr>
+                                                    <th class="text-center text-white primary-bg">STT</th>
+                                                    <th class="text-center text-white primary-bg">HÀNH KHÁCH</th>
+                                                    <th class="text-center text-white primary-bg">SỐ ĐIỆN THOẠI</th>
+                                                    <th class="text-center text-white primary-bg">LOẠI VÉ</th>
+                                                    <th class="text-center text-white primary-bg">SỐ GHẾ</th>
+                                                    <th class="text-center text-white primary-bg">GIÁ (VND)</th>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                                <tr>
+                                                    <td class="text-center">1</td>
+                                                    <td class="text-start">----</td>
+                                                    <td class="text-start">----</td>
+                                                    <td class="text-start">Người lớn</td>
+                                                    <td class="text-center text-uppercase seat-trip">---</td>
+                                                    <td class="text-end">----</td>
+                                                </tr>
+                                                <tr>
+                                                    <td class="text-center">2</td>
+                                                    <td class="text-start">----</td>
+                                                    <td class="text-start">----</td>
+                                                    <td class="text-start">Người lớn</td>
+                                                    <td class="text-center text-uppercase seat-trip">---</td>
+                                                    <td class="text-end">----</td>
+                                                </tr>
+                                                <tr>
+                                                    <td class="text-center">3</td>
+                                                    <td class="text-start">----</td>
+                                                    <td class="text-start">----</td>
+                                                    <td class="text-start">Người lớn</td>
+                                                    <td class="text-center text-uppercase seat-trip">---</td>
+                                                    <td class="text-end">----</td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                    <div class="col-12 border border-1 rounded-3 p-2 p-md-4 mb-4">
+                                        <h6 class="text-uppercase fw-semibold primary"> Chuyến về</h6>
+                                        <div class="row">
+                                            <div class="col-12 col-md-6">
+                                                <p class="fs-sm-6"><strong>Tên chuyến: </strong></p>
+                                            </div>
+                                            <div class="col-12 col-md-6">
+                                                <p class="fs-sm-6"><strong>Ngày khởi hành: </strong></p>
+                                            </div>
+                                            <div class="col-12 col-md-6">
+                                                <p class="fs-sm-6"><strong>Tên tàu: </strong></p>
+                                            </div>
+                                            <div class="col-12 col-md-6">
+                                                <p class="fs-sm-6"><strong>Cảng: </strong></p>
+                                            </div>
+                                        </div>
+                                        <table class="table table-bordered customer-list-table">
+                                            <thead>
+                                                <tr>
+                                                    <th class="text-center text-white primary-bg">STT</th>
+                                                    <th class="text-center text-white primary-bg">HÀNH KHÁCH</th>
+                                                    <th class="text-center text-white primary-bg">SỐ ĐIỆN THOẠI</th>
+                                                    <th class="text-center text-white primary-bg">LOẠI VÉ</th>
+                                                    <th class="text-center text-white primary-bg">SỐ GHẾ</th>
+                                                    <th class="text-center text-white primary-bg">GIÁ (VND)</th>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                                <tr>
+                                                    <td class="text-center">1</td>
+                                                    <td class="text-start">----</td>
+                                                    <td class="text-start">----</td>
+                                                    <td class="text-start">Người lớn</td>
+                                                    <td class="text-center text-uppercase seat-trip">---</td>
+                                                    <td class="text-end">----</td>
+                                                </tr>
+                                                <tr>
+                                                    <td class="text-center">2</td>
+                                                    <td class="text-start">----</td>
+                                                    <td class="text-start">----</td>
+                                                    <td class="text-start">Người lớn</td>
+                                                    <td class="text-center text-uppercase seat-trip">---</td>
+                                                    <td class="text-end">----</td>
+                                                </tr>
+                                                <tr>
+                                                    <td class="text-center">3</td>
+                                                    <td class="text-start">----</td>
+                                                    <td class="text-start">----</td>
+                                                    <td class="text-start">Người lớn</td>
+                                                    <td class="text-center text-uppercase seat-trip">---</td>
+                                                    <td class="text-end">----</td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                    <div class="d-flex justify-content-end px-2 px-md-4">
+                                        <p class="fs-sm-6"><strong>Tổng tiền:</strong></p>
+                                    </div>
+                                </div>
+                                <hr>
+                                <div class="title-info py-2 d-flex align-items-center">
+                                    <i class="bi bi-window-stack fs-4 me-2"></i>
+                                    <h6 class="text-uppercase fw-semibold mb-0">phương thức thanh toán</h6>
+                                </div>
+                                <div class="row px-md-2 mb-3">
+                                    <div class="col-12">
+                                        <p class="info"><strong>Thanh toán ngay</strong></p>
+                                    </div>
+                                    <div class="col-6 col-md-4 col-lg-3 p-2">
+                                        <div
+                                            class="border border-1 rounded-3 text-center h-100 p-2 d-flex flex-column justify-content-center align-items-center">
+                                            <div>
+                                                <a href="#"><img src="assets/images/vnpay.jpg" alt="pay"
+                                                        class="img-fluid"></a>
+                                            </div>
+                                            <p>Thẻ nội địa và E-banking</p>
+                                        </div>
+                                    </div>
+                                    <div class="col-6 col-md-4 col-lg-3 p-2">
+                                        <div
+                                            class="border border-1 rounded-3 text-center h-100 p-2 d-flex flex-column justify-content-center align-items-center">
+                                            <div>
+                                                <a href="#"><img src="assets/images/tindung.jpg" alt="pay"
+                                                        class="img-fluid"></a>
+                                            </div>
+                                            <p>Thẻ nội địa và E-banking</p>
+                                        </div>
+                                    </div>
+                                    <div class="col-6 col-md-4 col-lg-3 p-2">
+                                        <div
+                                            class="border border-1 rounded-3 text-center h-100 p-2 d-flex flex-column justify-content-center align-items-center">
+                                            <div>
+                                                <a href="#"><img src="assets/images/momo.jpg" alt="pay"
+                                                        class="img-fluid"></a>
+                                            </div>
+                                            <p>Thẻ nội địa và E-banking</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row px-md-2 mb-3">
+                                    <div class="col-12">
+                                        <p class="info"><strong>Giữ mã đặt chỗ & thanh toán sau</strong></p>
+                                    </div>
+                                    <div class="col-6 col-md-4 col-lg-3 p-2">
+                                        <div
+                                            class="border border-1 rounded-3 text-center h-100 p-2 d-flex flex-column justify-content-center align-items-center">
+                                            <div>
+                                                <a href="#"><img src="assets/images/trasao.jpg" alt="pay"
+                                                        class="img-fluid"></a>
+                                            </div>
+                                            <p>Thanh toán sau</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="title-info py-2 d-flex align-items-center">
+                                    <i class="bi bi-card-list fs-4 me-2"></i>
+                                    <h6 class="text-uppercase fw-semibold mb-0">ĐIỀU KHOẢN ĐẶT VÉ</h6>
+                                </div>
+                                <div style="overflow: hidden;">
+                                    <div class="policy bg-gray p-2 p-md-4 rounded-3">
+                                        <h6 class="fw-semibold">1. Điều kiện chung:</h6>
+                                        <div class="">
+                                            <p>1.1 Hệ thống đặt vé trực tuyến online www.phuquocexpress.com
+                                                (dưới đây gọi là “hệ thống đặt vé”) thuộc Công ty Cổ phần Tàu cao
+                                                tốc Phú Quốc. (gọi tắt là “Công ty” hoặc “Phú Quốc Express”). Khi
+                                                thực hiện đặt vé tại hệ thống của chúng tôi có nghĩa bạn đã đồng ý
+                                                với các điều kiện - điều khoản áp dụng, và các thông báo, bao gồm
+                                                nhưng không giới hạn bởi những điều kiện sử dụng của Website. Nếu
+                                                quý khách không có ý định mua hoặc quý khách không đồng ý với bất kỳ
+                                                phần nào của các điều kiện sử dụng hoặc các điều khoản và điều kiện
+                                                áp dụng khác, vui lòng DỪNG VIỆC SỬ DỤNG hệ thống đặt vé của Công
+                                                ty.</p>
+
+                                            <p>1.2 Các thông tin trong hệ thống đặt vé có thể thay đổi bất cứ
+                                                lúc nào mà không cần thông báo trước. Quý khách vui lòng truy cập
+                                                vào các trang web của Công ty để xem các Điều khoản này. Phú Quốc
+                                                Express từ chối trách nhiệm hay đưa ra đảm bảo rằng website sẽ không
+                                                có lỗi vận hành, an toàn, không bị gián đoạn hay bất cứ đảm bảo nào
+                                                về tính chính xác, đầy đủ và đúng hạn các thông tin hiển thị.</p>
+                                            <p></p>
+                                        </div>
+                                        <h6 class="fw-semibold">2. Sử dụng mục đích cá nhân và phi thương mại:</h6>
+                                        <div class="">
+                                            <p>Hệ thống đặt vé chỉ dành cho sử dụng cá nhân và phi thương mại. Không
+                                                được chỉnh sửa, sao chép, phân phối, truyền tải, chuyển nhượng hoặc
+                                                bán bất kỳ thông tin, phần mềm, sản phẩm hoặc dịch vụ thu được từ hệ
+                                                thống đặt vé này.</p>
+                                        </div>
+                                        <h6 class="fw-semibold">3. Sử dụng hệ thống đặt vé:</h6>
+                                        <div class="">
+                                            <p>3.1 Hệ thống đặt vé chỉ đơn thuần là cung cấp lịch trình và vị
+                                                trí chỗ ngồi hiện có của tàu Phú Quốc Express và cho khách hàng thực
+                                                hiện đặt chỗ hợp pháp. Chúng tôi có quyền từ chối truy cập của quý
+                                                khách vào hệ thống khi nghi ngờ quý khách lợi dụng hệ thống cho mục
+                                                đích bất hợp pháp.</p>
+                                            <p>3.2 Khi đặt vé quý khách phải tuân thủ đầy đủ các điều kiện sử
+                                                dụng hệ thống đặt vé của Công ty và quy định khác của Pháp luật liên
+                                                quan bao gồm về việc cung cấp đầy đủ thông tin khách hàng phù hợp
+                                                với giấy tờ tùy thân (Chứng minh nhân dân – căn cước công dân - hộ
+                                                chiếu - giấy khai sinh (đối với hành khách chưa được cấp CCCD) hoặc
+                                                bằng lái xe và thanh toán toàn bộ tiền vé khi đến hạn thanh toán.
+                                                Đồng thời tuân thủ tất cả các quy tắc và hạn chế về sự sẵn có của
+                                                giá vé, sản phẩm hay dịch vụ. Khách hàng chỉ chịu trách nhiệm cho
+                                                các khoản phí, phụ phí, thuế và phát sinh từ việc sử dụng hệ thống
+                                                đặt vé.</p>
+                                            <p>3.3 Khách hàng có quyền sử dụng hệ thống đặt vé để mua vé hợp
+                                                pháp.</p>
+                                        </div>
+                                        <h6 class="fw-semibold">4. Quy tắc đặt vé:</h6>
+                                        <div class="">
+                                            <p>4.1 Trẻ em phải đi cùng với người lớn, trẻ em dưới 6 tuổi tại
+                                                thời điểm đi được miễn vé, trẻ em từ 6 đến dưới 11 tuổi (căn cứ vào
+                                                giấy khai sinh) tại thời điểm đi phải mua vé trẻ em, vé phải được
+                                                đặt cùng thời điểm và loại vé với người lớn đi cùng.</p>
+                                            <p>4.2 Việc đặt vé có liên quan đến các điều kiện giá vé áp dụng
+                                                và số lượng chỗ còn trống thuộc giá vé đó.</p>
+                                            <p>4.3 Sau khi quý khách đặt vé trên hệ thống
+                                                www.phuquocexpress.com và thanh toán đầy đủ tiền trước thời hạn
+                                                thanh toán quý khách sẽ được cấp thẻ lên tàu (boarding pass). Thông
+                                                qua địa chỉ Email Quý khách đã cung cấp khi đặt vé. Chúng tôi chỉ có
+                                                trách nhiệm gởi thẻ lên tàu đúng với địa chỉ Email mà Quý khách đã
+                                                cung cấp khi đặt vé. Trường hợp không đúng, Quý khách liên hệ Công
+                                                ty để được hỗ trợ.</p>
+                                            <p>4.4 Giá vé và các loại thuế sẽ được ghi trên hệ thống bằng
+                                                đồng Việt Nam (VND). Hệ thống thanh toán chấp nhận thanh toán trực
+                                                tuyến bằng thẻ ATM, chuyển khoản qua tài khoản ngân hàng, thẻ tín
+                                                dụng và ghi nợ quốc tế hoặc nộp tiền mặt tại văn phòng của hai cổng
+                                                thanh toán trên.</p>
+                                        </div>
+                                        <h6 class="fw-semibold">5. Không sử dụng cho mục đích phạm pháp:</h6>
+                                        <div class="">
+                                            <p>5.1 Quý khách không được sử dụng hệ thống đặt vé Phú Quốc
+                                                Express để thực hiện bất kỳ việc đặt vé trái phép, đầu cơ hoặc lừa
+                                                đảo và các hành vi khác mà pháp luật nghiêm cấm.</p>
+                                            <p>5.2 Các hành vi bị nghiêm cấm khi sử dụng hệ thống đặt vé:</p>
+                                            <div class="">
+                                                <p>(a) Sử dụng hệ thống đặt vé cho bất kỳ hoạt động liên quan đến
+                                                    hành vi vi phạm pháp luật;</p>
+                                                <p>(b) Sử dụng hệ thống đặt vé để can thiệp vào việc đặt vé của
+                                                    người dùng khác;</p>
+                                                <p>(c) Sử dụng các phương pháp khác để giao dịch hoặc thu thập thông
+                                                    tin khi bạn không thể sử dụng hệ thống của chúng tôi.</p>
+                                            </div>
+                                            <p>Nếu quý khách vi phạm một trong các hành vi nêu trên Công ty Phú Quốc
+                                                Express có quyền đơn phương hủy bỏ việc đặt vé của quý khách mà
+                                                không cần phải thông báo hoặc giải thích lý do hủy bỏ vé cho quý
+                                                khách.</p>
+                                        </div>
+                                        <h6 class="fw-semibold">6. Giới hạn sử dụng:</h6>
+                                        <div class="">
+                                            <p>Công ty Phú Quốc Express có toàn quyền sử dụng và quản lý (bao gồm cả
+                                                dịch vụ, bản quyền và quyền sáng chế) về các phần mềm, thông tin và
+                                                tài liệu có sẵn trong hệ thống đặt vé. Quý khách không được quyền
+                                                tải về hoặc lấy bất kỳ phần mềm, thông tin khách hàng hoặc các tài
+                                                liệu có sẵn trong hệ thống mà không được chấp thuận bằng văn bản của
+                                                Công ty Phú Quốc Express. Công ty Phú Quốc Express chỉ có trách
+                                                nhiệm cung cấp các thông tin quý khách cho Cơ quan pháp luật khi có
+                                                yêu cầu phục vụ cho việc đảm bảo an ninh quốc phòng Việt Nam của các
+                                                cơ quan quản lý nhà nước có thẩm quyền.</p>
+                                        </div>
+                                        <h6 class="fw-semibold">7. Độ tuổi và trách nhiệm:</h6>
+                                        <div class="">
+                                            <p>Quý Khách phải đảm bảo đủ tuổi pháp lý khi sử dụng hệ thống đặt vé
+                                                phù hợp với các điều kiện sử dụng. Quý khách phải quản lý tất cả các
+                                                hành vi sử dụng hệ thống đặt vé dưới tên hoặc tài khoản của Quý
+                                                khách và đảm bảo rằng tất cả các thông tin do quý khách cung cấp
+                                                trong khi sử dụng hệ thống đặt vé là chính xác và đúng sự thật.</p>
+                                        </div>
+                                        <h6 class="fw-semibold">8. Miễn trách nhiệm:</h6>
+                                        <div class="">
+                                            <p>Hệ thống đặt vé hiện tại còn một số điều chưa hoàn thiện có thể còn
+                                                một số sai sót ngoài mong đợi, trong phạm vi cho phép của pháp luật,
+                                                Phú Quốc Express từ chối tất cả các đảm bảo và cam kết đối với hệ
+                                                thống đặt vé bao gồm thương mại, phù hợp cho một mục đích cụ thể,
+                                                không vi phạm sở hữu trí tuệ hoặc quyền sở hữu khác hoặc tương thích
+                                                giữa hệ thống đặt chỗ và bất kỳ phần mềm hoặc phần cứng.</p>
+                                        </div>
+                                        <h6 class="fw-semibold">9. Không đảm bảo:</h6>
+                                        <div class="">
+                                            <p>Phú Quốc Express không đảm bảo rằng việc truy cập hoặc sử dụng hệ
+                                                thống đặt vé của Quý khách sẽ không bị gián đoạn hoặc không có lỗi,
+                                                hoặc bất cứ thông tin, dữ liệu, nội dung, phần mềm hoặc tài liệu
+                                                khác có thể truy cập trong hệ thống sẽ không có lỗi, virus hoặc các
+                                                thành phần có hại khác.</p>
+                                        </div>
+                                        <h6 class="fw-semibold">10. Giới hạn trách nhiệm:</h6>
+                                        <div class="">
+                                            <p>Trong phạm vi cho phép của pháp luật, Phú Quốc Express không chịu
+                                                trách nhiệm đối với những thiệt hại, mất mát, khiếu nại về hệ thống
+                                                đặt vé bao gồm các lỗi do sơ suất, cho dù thực tế, ngẫu nhiên, phát
+                                                sinh hoặc có nguyên nhân liên quan tới bất kỳ các mục sau đây:</p>
+                                            <div class="">
+                                                <p>(a) Truy cập hoặc sử dụng hệ thống đặt vé;</p>
+                                                <p>(b) Dữ liệu, thông tin hay tài liệu chứa trong hệ thống đặt vé
+                                                    bao gồm cả việc sử dụng các dữ liệu, thông tin hoặc tài liệu để
+                                                    kiểm tra giá vé và số chỗ, đặt vé hoặc bất kỳ sử dụng khác;</p>
+                                                <p>(c) Cung cấp bất kỳ thông tin cá nhân, kinh doanh, bao gồm cả chi
+                                                    tiết thông tin ngân hàng và thẻ tín dụng;</p>
+                                                <p>(d) Hệ thống không sẵn sàng cho việc đặt vé do mạng máy tính,
+                                                    thiết bị phụ trợ, hệ thống hoặc công nghệ hoặc bất kỳ trường hợp
+                                                    khác, bao gồm cả việc sử dụng hoặc không có khả năng sử dụng hệ
+                                                    thống để kiểm tra giá và số chỗ hoặc để đặt vé, thanh toán hoặc
+                                                    bất kỳ sử dụng khác;</p>
+                                                <p>(e) Việc hoạt động hoặc ngừng hoạt động của hệ thống hay thất bại
+                                                    của bất kỳ chức năng hoặc dịch vụ gắn với hệ thống đặt vé, toàn
+                                                    bộ hoặc một phần;</p>
+                                                <p>(f) Bất kỳ truy cập trái phép hoặc vi phạm an ninh vào hệ thống
+                                                    đặt vé qua mạng máy tính toàn cầu.</p>
+                                                <p>(g) Bất kỳ hoạt động đặt vé được thực hiện thông qua hệ thống mà
+                                                    không đăng ký hoặc không đầy đủ hoặc bị trì hoãn hoặc có lỗi.
+                                                </p>
+                                            </div>
+                                            <p>Nếu có bất kỳ thiệt hại nào phát sinh do việc đăng nhập hoặc sử dụng
+                                                hệ thống đặt vé mà Phú Quốc Express có trách nhiệm, Phú Quốc Express
+                                                sẽ không phải chịu trách nhiệm vượt quá trách nhiệm về phí đăng ký
+                                                thuê bao và phí dịch vụ đăng nhập vào hệ thống đặt vé.</p>
+                                        </div>
+                                        <h6 class="fw-semibold">11. Hủy hoặc tạm ngưng dịch vụ:</h6>
+                                        <div class="">
+                                            <p>Phú Quốc Express có thể hủy bỏ hoặc tạm ngưng việc sử dụng các hệ
+                                                thống đặt vé bất cứ lúc nào mà không cần thông báo nếu Phú Quốc
+                                                Express nghi ngờ rằng hệ thống đặt vé hoặc User ID của Quý khách và
+                                                mật khẩu đang được sử dụng, hoặc có thể được sử dụng:</p>
+                                            <div class="">
+                                                <p>(a) Bởi người chưa được Quý khách cho phép; hoặc</p>
+                                                <p>(b) Vi phạm các điều kiện sử dụng; hoặc</p>
+                                                <p>(c) Theo cách thức có thể gây ra thiệt hại cho Quý khách hoặc Phú
+                                                    Quốc Express. Phú Quốc Express có thể đơn phương chấm dứt bất cứ
+                                                    lúc nào, không đưa ra lý do hay thông báo, chấm dứt hoặc hạn chế
+                                                    truy cập của quý khách với hệ thống đặt vé hoặc từ chối có hiệu
+                                                    lực cho bất kỳ việc đặt vé thông qua hệ thống mà không đưa ra
+                                                    bất kỳ lý do hoặc thông báo cho quý khách.</p>
+                                            </div>
+                                        </div>
+                                        <h6 class="fw-semibold">12. Bảo mật:</h6>
+                                        <div class="">
+                                            <p>Phú Quốc Express sẽ có biện pháp hợp lý để đảm bảo rằng thông tin mà
+                                                quý khách lưu tại hệ thống đặt vé sẽ được bảo mật và bảo vệ khỏi
+                                                những truy cập trái phép, nhưng Phú Quốc Express không đảm bảo chống
+                                                truy cập trái phép và sẽ không chịu trách nhiệm trước pháp luật về
+                                                bất kỳ truy cập trái phép với thông tin đó.</p>
+                                        </div>
+                                        <h6 class="fw-semibold">13. Luật áp dụng:</h6>
+                                        <div class="">
+                                            <p>Điều khoản được hiểu và điều chỉnh theo các quy định của luật pháp
+                                                của Việt Nam và Quý khách đồng ý với phán quyết của các tòa án ở
+                                                Việt Nam.</p>
+                                            <p>Quý khách đã đọc kỹ và đồng ý tuân thủ tất cả các quy định mua vé
+                                                trực tuyến của Công ty và chịu trách nhiệm về tính xác thực của các
+                                                thông tin trên.</p>
+                                            <p>Quý khách vui lòng kiểm tra kỹ và xác nhận các thông tin đã cung cấp
+                                                trước khi thực hiện giao dịch mua vé. Sau khi thực hiện thanh toán ở
+                                                trang tiếp theo quý khách sẽ không thể thay đổi được thông tin đã
+                                                cung cấp.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="form-check mt-5">
+                                    <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                                    <label class="form-check-label" for="flexCheckDefault">
+                                        Tôi đã đọc kỹ và đồng ý tuân thủ tất cả các quy định mua vé trực tuyến của
+                                        công ty và chịu trách nhiệm về tính xác thực của các thông tin trên
+                                    </label>
+                                </div>
+                                <div class="mt-4">
+                                    <p class="opacity-50 primary">Quý khách vui lòng kiểm tra kỹ và xác nhận các thông tin đã cung cấp trước khi thực hiện giao dịch mua vé. Sau khi thực hiện thanh toán ở trang tiếp theo quý khách sẽ không thể thay đổi được thông tin đã cung cấp.</p>
+                                </div>
+                                <div class="d-flex justify-content-between align-items-center py-4 mt-3">
+                                    <div class="">
+                                        <a href="passengers.html" class="btn btn-previous">Quay lại</a>
+                                    </div>
+                                    <div class="">
+                                        <a href="#" class="btn btn-style">Thanh toán</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+        </section>
+    </main>
+
+    <footer>
+        <section class="section section-ft pt-5">
+            <div class="bg-overlay-blue"></div>
+            <div class="container">
+                <div class="row justify-content-center">
+                    <div class="col-12 mb-4">
+                        <h2 class="h3 text-uppercase fw-semibold title-info">Liên hệ</h2>
+                    </div>
+                </div>
+                <div class="row justify-content-center">
+                    <div class="col-12 col-md-4 mb-4">
+                        <h5 class="h6 fw-semibold">Công ty Cổ phần Tàu cao tốc Phú Quốc</h5>
+                        <div>
+                            <a href="#" class="ft-link dark"><i class="bi bi-geo-alt"></i> Tổ 6 Ấp Bãi Vòng, Xã Hàm
+                                Ninh, TP
+                                Phú Quốc, tỉnh Kiên Giang</a>
+                        </div>
+                        <div>
+                            <a href="#" class="ft-link dark"><i class="bi bi-telephone"></i> 0297.6281.888</a>
+                        </div>
+                        <div>
+                            <a href="#" class="ft-link dark"><i class="bi bi-telephone"></i> 0907.868.880</a>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-4 mb-4">
+                        <h5 class="h6 fw-semibold">Phòng vé Vũng Tàu</h5>
+                        <div>
+                            <a href="#" class="ft-link dark"><i class="bi bi-geo-alt"></i> 09 Hạ Long, Phường 2,TP Vũng
+                                Tàu,
+                                tỉnh Bà Rịa - Vũng Tàu</a>
+                        </div>
+                        <div>
+                            <a href="#" class="ft-link dark"><i class="bi bi-telephone"></i> 0254.3622.889</a>
+                        </div>
+                        <div>
+                            <a href="#" class="ft-link dark"><i class="bi bi-telephone"></i> 0901.868.870</a>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-4 mb-4">
+                        <h5 class="h6 fw-semibold">Phòng vé Trần Đề</h5>
+                        <div>
+                            <a href="#" class="ft-link dark"><i class="bi bi-geo-alt"></i> Ấp Cảng, TT Trần Đề, huyện
+                                Trần
+                                Đề, tỉnh Sóc Trăng</a>
+                        </div>
+                        <div>
+                            <a href="#" class="ft-link dark"><i class="bi bi-telephone"></i> 0963.104.699</a>
+                        </div>
+
+                    </div>
+                </div>
+                <div class="row justify-content-center">
+                    <div class="col-12 col-md-4 mb-4">
+                        <h5 class="h6 fw-semibold">Văn phòng đại diện TPHCM</h5>
+                        <div>
+                            <a href="#" class="ft-link dark"><i class="bi bi-geo-alt"></i> 15 Đường N1 (Lê Thị Chợ nối
+                                dài)
+                                khu dân cư La Casa, phường Phú Nhuận, Quận 7. TP.HCM</a>
+                        </div>
+                        <div>
+                            <a href="#" class="ft-link dark"><i class="bi bi-telephone"></i> 0283.8732.459</a>
+                        </div>
+                        <div>
+                            <a href="#" class="ft-link dark"><i class="bi bi-telephone"></i> 0901.868.878</a>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-4 mb-4">
+                        <h5 class="h6 fw-semibold">Phòng vé Côn Đảo</h5>
+                        <div>
+                            <a href="#" class="ft-link dark"><i class="bi bi-geo-alt"></i> 11 Trần Phú, KDC số 6, TT Côn
+                                Đảo,
+                                Huyện Côn Đảo, Tình Bà Rịa - Vũng Tàu</a>
+                        </div>
+                        <div>
+                            <a href="#" class="ft-link dark"><i class="bi bi-telephone"></i> 0254.3831.679</a>
+                        </div>
+                        <div>
+                            <a href="#" class="ft-link dark"><i class="bi bi-telephone"></i> 0901.868.872</a>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-4 mb-4">
+                        <h5 class="h6 fw-semibold">Phòng vé Sóc Trăng</h5>
+                        <div>
+                            <a href="#" class="ft-link dark"><i class="bi bi-geo-alt"></i> 52 Võ Thị Sáu, phường 3,
+                                Thành Phố
+                                Sóc Trăng, tỉnh Sóc Trăng</a>
+                        </div>
+                        <div>
+                            <a href="#" class="ft-link dark"><i class="bi bi-telephone"></i> 0962.714.699</a>
+                        </div>
+
+                    </div>
+                </div>
+                <div class="row justify-content-center">
+                    <div class="col-12 col-md-4 mb-4">
+                        <h5 class="h6 fw-semibold">Phòng vé Rạch Giá</h5>
+                        <div>
+                            <a href="#" class="ft-link dark"><i class="bi bi-geo-alt"></i> 16 Lô 4, Đường 3/2, P.Vĩnh
+                                Thanh
+                                Vân, TP Rạch Giá, tỉnh Kiên Giang</a>
+                        </div>
+                        <div>
+                            <a href="#" class="ft-link dark"><i class="bi bi-telephone"></i> 0297.6287.888</a>
+                        </div>
+                        <div>
+                            <a href="#" class="ft-link dark"><i class="bi bi-telephone"></i> 0901.868.871</a>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-4 mb-4">
+                        <h5 class="h6 fw-semibold">Phòng vé Hà Tiên</h5>
+                        <div>
+                            <a href="#" class="ft-link dark"><i class="bi bi-geo-alt"></i> Bến tàu Hà Tiên, Đường Kim
+                                Dự,
+                                Phường Tô Châu, TP Hà Tiên, tỉnh Kiên Giang</a>
+                        </div>
+                        <div>
+                            <a href="#" class="ft-link dark"><i class="bi bi-telephone"></i> 0297.6280.888</a>
+                        </div>
+                        <div>
+                            <a href="#" class="ft-link dark"><i class="bi bi-telephone"></i> 0901.868.872</a>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-4 mb-4">
+                        <h5 class="h6 fw-semibold">Phòng vé Nam Du</h5>
+                        <div>
+                            <a href="#" class="ft-link dark"><i class="bi bi-geo-alt"></i> Bến cảng Nam Du, Xã Đảo An
+                                Sơn,
+                                Huyện Kiên Hải, tỉnh Kiên Giang</a>
+                        </div>
+                        <div>
+                            <a href="#" class="ft-link dark"><i class="bi bi-telephone"></i> 0901.868.875</a>
+                        </div>
+
+                    </div>
+                </div>
+                <div class="row justify-content-center">
+                    <div class="col-12 col-md-4 mb-4">
+                        <h5 class="h6 fw-semibold">Phòng vé Đà Nẵng</h5>
+                        <div>
+                            <a href="#" class="ft-link dark"><i class="bi bi-geo-alt"></i> Cảng Sông Hàn, Bạch Đằng,
+                                Phường
+                                Thạch Thang, Quận Hải Châu, TP Đà Nẵng</a>
+                        </div>
+                        <div>
+                            <a href="#" class="ft-link dark"><i class="bi bi-telephone"></i> 0989.797.651</a>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-4 mb-4">
+                        <h5 class="h6 fw-semibold">Phòng vé Lý Sơn</h5>
+                        <div>
+                            <a href="#" class="ft-link dark"><i class="bi bi-geo-alt"></i> Cầu cảng Lý Sơn, Xã An Vĩnh,
+                                Huyện
+                                Lý Sơn, Tỉnh Quảng Ngãi</a>
+                        </div>
+                        <div>
+                            <a href="#" class="ft-link dark"><i class="bi bi-telephone"></i> 0966.135.675</a>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-4 mb-4">
+                        <h5 class="h6 fw-semibold">Phòng vé Phan Thiết</h5>
+                        <div>
+                            <a href="#" class="ft-link dark"><i class="bi bi-geo-alt"></i> Số 175 Võ Thị Sáu, KP6,
+                                P.Hưng
+                                Long, Tp.Phan Thiết, Tỉnh Bình Thuận</a>
+                        </div>
+                        <div>
+                            <a href="#" class="ft-link dark"><i class="bi bi-telephone"></i> 0961.054.966</a>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+            <div class="gap gap-150 gap-img" style="background-image: url(assets/images/bg-footer.png);"></div>
+        </section>
+        <section class="section indigo-bg">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12 col-md-8 text-white">
+                        <h2 class="h3 text-uppercase fw-semibold">Công ty cổ phần Tàu Cao tốc Phú Quốc</h2>
+                        <p class="">
+                            <a href="#" class="ft-link light">Địa chỉ: Tổ 6, Ấp Bãi Vòng, Xã Hàm Ninh, Thành phố Phú
+                                Quốc, Tỉnh Kiên Giang</a><br>
+                            <a href="mailto:info@pqe.vn" class="ft-link light">Email: info@pqe.vn</a><br>
+                            <a href="tel:0901868878" class="ft-link light">Hotline: 0901.868.878</a><br>
+                            <a href="tel:02838732459" class="ft-link light">Điện thoại: 0283.8732.459</a>
+                        </p>
+                        <div class="my-4 logo" style="height:auto;width: 200px;">
+                            <img src="assets/images/thongbaobocongthuong.png" class="img-fluid"
+                            alt="...">
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-4 text-white">
+                        <h2 class="h3 text-uppercase fw-semibold">Điều khoản sử dụng</h2>
+                        <ul class="menu-ft">
+                            <li><a href="#" class="ft-link light">Điều khoản chung</a></li>
+                            <li><a href="#" class="ft-link light">Điều Kiện Đặt vé Trực Tuyến</a></li>
+                            <li><a href="#" class="ft-link light">Chính sách Bảo mật thông tin</a></li>
+                            <li><a href="#" class="ft-link light">Chính sách thanh toán</a></li>
+                            <li><a href="#" class="ft-link light">Hồ sơ đăng ký chất lượng dịch vụ</a></li>
+                            <li><a href="#" class="ft-link light">Quy định vận chuyển hàng hóa</a></li>
+                            <li><a href="#" class="ft-link light">Câu hỏi thường gặp</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-12 text-center text-white">
+                        <p>@ Copyright 2021 | <span class="primary">Phu Quoc Express</span></p>
+                    </div>
+                </div>
+        </section>
+    </footer>
+    <!-- JS here -->
+
+    <!-- Jquery, Popper, Bootstrap -->
+    <script src="./assets/vendors/jquery/jquery.min.js"></script>
+    <script src="./assets/vendors/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/flatpickr@4.6.6/dist/flatpickr.min.js"></script>
+    <!-- custom js -->
+    <!-- <script src="./assets/js/script.js"></script> -->
+    <script src="./assets/js/theme.js"></script>
+    <script src="./assets/js/swiper.min.js"></script>
+
+</body>
+
+</html>
